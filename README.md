@@ -4,25 +4,8 @@ A read-only, synthetic-data dashboard illustrating how regulated engineering tea
 
 [Open the dashboard](https://asajjadi.github.io/clearpath-portfolio-demo/) *(available after GitHub Pages is enabled)*
 
-## What this demonstrates
+## AI-guided project-management concept
 
-- Engineering traceability from requirement through evidence
-- Audit-readiness and evidence-gap prioritization
-- Design-control, risk, and verification workflow thinking
-- Clear technical storytelling for multidisciplinary stakeholders
+ClearPath also illustrates an AI-guided learning and project-management concept for medical-device development: lifecycle-based planning, contextual guidance, an AI Coach, auditable activity history, and human-governed agent design.
 
-## Safe by design
-
-This repository is deliberately separate from the ClearPath core product.
-
-- All records, scores, and project names are synthetic.
-- The interface is read-only and has no database, credentials, customer information, clinical data, or production integration.
-- It is a portfolio demonstration—not a validated QMS, regulatory submission tool, or claim of compliance.
-
-## Run locally
-
-Open `index.html` in a browser. No build step, database, account, or API key is required.
-
-## Copyright
-
-© 2026 Amir Sajjadi. All rights reserved. This public demonstration may be viewed for evaluation purposes; reuse, redistribution, or commercial use requires prior written permission.
+[Read the public-safe case study](AI_GUIDED_PM_CASE_STUDY.md)
