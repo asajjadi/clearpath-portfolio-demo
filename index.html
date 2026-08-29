@@ -23,15 +23,23 @@
       </div>
       <div class="project-select">
         <label for="project">Active demonstration project</label>
-        <select id="project"><option>Infusion Pump Platform — Demo</option><option>Catheter Delivery System — Demo</option></select>
+        <select id="project"><option value="pump">Infusion Pump Platform — Demo</option><option value="catheter">Catheter Delivery System — Demo</option></select>
+        <a class="interactive-link" href="https://joyful-cranachan-913651.netlify.app/" target="_blank" rel="noopener">Try the interactive PM training demo ↗</a>
       </div>
     </section>
 
     <section class="summary-grid" aria-label="Readiness summary">
-      <article class="metric accent"><span>Audit-readiness score</span><strong>82<small>/100</small></strong><p>+6 points since prior review</p></article>
-      <article class="metric"><span>Traceability coverage</span><strong>91<small>%</small></strong><p>248 linked evidence records</p></article>
-      <article class="metric warning"><span>Open evidence gaps</span><strong>7</strong><p>2 need action this week</p></article>
-      <article class="metric"><span>Risk controls verified</span><strong>38<small>/42</small></strong><p>4 awaiting final evidence</p></article>
+      <article class="metric accent"><span>Audit-readiness score</span><strong id="score">82<small>/100</small></strong><p id="scoreNote">+6 points since prior review</p></article>
+      <article class="metric"><span>Traceability coverage</span><strong id="coverage">91<small>%</small></strong><p id="coverageNote">248 linked evidence records</p></article>
+      <article class="metric warning"><span>Open evidence gaps</span><strong id="gapsTotal">7</strong><p id="gapsNote">2 need action this week</p></article>
+      <article class="metric"><span>Risk controls verified</span><strong id="riskControls">38<small>/42</small></strong><p id="riskNote">4 awaiting final evidence</p></article>
+    </section>
+    <section class="lifecycle panel" aria-label="Medical device development lifecycle">
+      <div class="panel-heading"><div><p class="eyebrow">MEDICAL-DEVICE DEVELOPMENT</p><h2>Lifecycle workspace</h2></div><a href="https://joyful-cranachan-913651.netlify.app/" target="_blank" rel="noopener" class="link-button">Open hands-on training ↗</a></div>
+      <div class="lifecycle-tabs" id="lifecycleTabs">
+        <button class="active">Concept</button><button>Design input</button><button>Design output</button><button>V&amp;V</button><button>Design transfer</button><button>Regulatory</button>
+      </div>
+      <p class="lifecycle-copy" id="lifecycleCopy">Review user needs, intended use, and the early risks that shape the development plan.</p>
     </section>
 
     <section class="content-grid">
@@ -75,7 +83,7 @@
   </main>
 
   <dialog id="aboutDialog"><button class="close" id="closeDialog">×</button><p class="eyebrow">ABOUT</p><h2>ClearPath QMS portfolio demo</h2><p>All displayed records and metrics are synthetic. This interface is a read-only illustration of traceability and audit-readiness concepts; it contains no client, employer, clinical, or proprietary data.</p></dialog>
-  <footer>© 2026 Amir Sajjadi. All rights reserved. · Demonstration interface only.</footer>
+  <footer>© 2026 Amir Sajjadi. All rights reserved. · Demonstration interface only. · <a href="https://utmostconnect.org/ClearPath%20QMS/" target="_blank" rel="noopener">ClearPath QMS training experience</a></footer>
   <script src="app.js"></script>
 </body>
 </html>
