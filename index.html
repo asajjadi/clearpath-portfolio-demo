@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ClearPath QMS | Portfolio Demo</title>
+  <meta name="description" content="Synthetic-data traceability and audit-readiness dashboard." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">C</span> ClearPath <small>QMS</small></a>
+    <div class="demo-badge">Portfolio demo · synthetic data</div>
+    <button class="button-secondary" id="aboutButton">About this demo</button>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">TRACEABILITY INTELLIGENCE</p>
+        <h1>Development evidence, made review-ready.</h1>
+        <p class="lead">A read-only demonstration of how engineering teams can connect requirements, risk controls, verification evidence, and open gaps before a design or audit review.</p>
+      </div>
+      <div class="project-select">
+        <label for="project">Active demonstration project</label>
+        <select id="project"><option>Infusion Pump Platform — Demo</option><option>Catheter Delivery System — Demo</option></select>
+      </div>
+    </section>
+
+    <section class="summary-grid" aria-label="Readiness summary">
+      <article class="metric accent"><span>Audit-readiness score</span><strong>82<small>/100</small></strong><p>+6 points since prior review</p></article>
+      <article class="metric"><span>Traceability coverage</span><strong>91<small>%</small></strong><p>248 linked evidence records</p></article>
+      <article class="metric warning"><span>Open evidence gaps</span><strong>7</strong><p>2 need action this week</p></article>
+      <article class="metric"><span>Risk controls verified</span><strong>38<small>/42</small></strong><p>4 awaiting final evidence</p></article>
+    </section>
+
+    <section class="content-grid">
+      <article class="panel coverage">
+        <div class="panel-heading"><div><p class="eyebrow">TRACEABILITY CHAIN</p><h2>Evidence coverage</h2></div><span class="status good">On track</span></div>
+        <div class="chain" role="img" aria-label="Requirement, design, verification, risk control, and evidence coverage">
+          <div><span class="dot done"></span><b>Requirements</b><small>56 / 56 linked</small></div>
+          <div><span class="connector full"></span></div>
+          <div><span class="dot done"></span><b>Design outputs</b><small>49 / 52 linked</small></div>
+          <div><span class="connector partial"></span></div>
+          <div><span class="dot warn"></span><b>Verification</b><small>43 / 48 complete</small></div>
+          <div><span class="connector partial"></span></div>
+          <div><span class="dot warn"></span><b>Risk controls</b><small>38 / 42 verified</small></div>
+          <div><span class="connector partial"></span></div>
+          <div><span class="dot open"></span><b>Evidence package</b><small>7 gaps open</small></div>
+        </div>
+        <p class="caption">Synthetic example: the dashboard highlights incomplete relationships before formal review.</p>
+      </article>
+
+      <article class="panel">
+        <div class="panel-heading"><div><p class="eyebrow">REVIEW FOCUS</p><h2>Highest-priority gaps</h2></div><button class="link-button" id="showAll">View all</button></div>
+        <div class="gaps" id="gaps">
+          <div class="gap"><span class="priority high">High</span><div><b>VF-024 · Occlusion alarm verification</b><p>Protocol evidence is not linked to the latest requirement revision.</p></div><span class="owner">Owner: Systems</span></div>
+          <div class="gap"><span class="priority high">High</span><div><b>RC-017 · Air-in-line detection control</b><p>Final verification result is pending review approval.</p></div><span class="owner">Owner: V&V</span></div>
+          <div class="gap"><span class="priority medium">Medium</span><div><b>DO-031 · Clamp subassembly drawing</b><p>Design output is missing a linked risk-control rationale.</p></div><span class="owner">Owner: Mechanical</span></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="content-grid lower">
+      <article class="panel">
+        <div class="panel-heading"><div><p class="eyebrow">READINESS TREND</p><h2>Last four review cycles</h2></div><span class="muted">Synthetic data</span></div>
+        <div class="chart"><div class="bar b1"><i></i><span>May</span><b>62</b></div><div class="bar b2"><i></i><span>Jun</span><b>68</b></div><div class="bar b3"><i></i><span>Jul</span><b>76</b></div><div class="bar b4"><i></i><span>Aug</span><b>82</b></div></div>
+      </article>
+      <article class="panel callout">
+        <p class="eyebrow">WHAT THIS SHOWS</p><h2>Engineering leadership through traceable execution.</h2>
+        <p>ClearPath is a portfolio demonstration—not a validated QMS or regulatory-compliance claim. It illustrates systems thinking across design controls, risk, verification planning, and technical program execution.</p>
+        <a href="https://github.com/asajjadi" class="button-primary">View Amir’s GitHub profile</a>
+      </article>
+    </section>
+  </main>
+
+  <dialog id="aboutDialog"><button class="close" id="closeDialog">×</button><p class="eyebrow">ABOUT</p><h2>ClearPath QMS portfolio demo</h2><p>All displayed records and metrics are synthetic. This interface is a read-only illustration of traceability and audit-readiness concepts; it contains no client, employer, clinical, or proprietary data.</p></dialog>
+  <footer>© 2026 Amir Sajjadi. All rights reserved. · Demonstration interface only.</footer>
+  <script src="app.js"></script>
+</body>
+</html>
